@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #000000;
     font-family: var(--font);
 }
@@ -11,21 +11,22 @@ body{
 :root {
     --grey: #eeeeee;
     --button-identity: #64d0dc;
-    --text:#67abab;
+    --text: #67abab;
     --safe: #94dc64;
     --fast: #dc7064;
-    --dark-brown:#352b26;
-    --dark-blue:#132a3b;
-    --grey:#707070;
+    --dark-brown: #352b26;
+    --dark-blue: #132a3b;
+    --grey: #707070;
     --font: calibri;
 }
-.container{
+
+.container {
     height: 400vh;
     width: 90%;
     margin: 0 5%;
 }
 
-nav{
+nav {
     margin: 15px auto;
     position: fixed;
     width: 90%;
@@ -35,7 +36,7 @@ nav{
     z-index: 1;
 }
 
-nav img{
+nav img {
     width: 83px;
     height: 107px;
 }
@@ -46,23 +47,23 @@ nav ul {
     column-gap: 15.5px;
 }
 
-.nav-button{
+.nav-button {
     color: #fff;
     list-style: none;
     cursor: pointer;
 }
 
-.nav-button:hover{
+.nav-button:hover {
     color: var(--button-identity);
 }
 
-.earth{
+.earth {
     width: 100%;
     height: 100vh;
     transition: all 3s ease-in-out;
 }
 
-.earth_scroll{
+.earth_scroll {
     border-radius: 100px;
     transform: translateY(-50vh);
 }
@@ -74,10 +75,16 @@ pre {
 
 .hidden {
     opacity: 0;
+    transform: translateX(-50px);
     transition: all 2s ease-in-out;
 }
 
 .show {
     opacity: 1;
-    transform: translateX(100px);
+    transform: translateX(0);
+}
+
+.hidden h2 {
+    color: var(--button-identity);
+    font-size: 75px;
 }
