@@ -1,23 +1,62 @@
-const earth = document.querySelector('.earth'),
-    hiddenElement = document.querySelector('.hidden');
+gsap.registerPlugin(ScrollTrigger);
 
 
 
 
 
-window.addEventListener('scroll', function (event) {
-    var scroll = this.scrollY;
-    console.log(scroll)
-    if (scroll >= 50) {
-        earth.classList.add('earth_scroll')
-    } else { earth.classList.remove('earth_scroll') }
+gsap.to('.section_2', {
+    scrollTrigger: {
+        trigger: '.section_2',
+        toggleActions:'restart pause reverse pause',
+        end:' top top',
+        scrub: 3,
+    },
+    y:-200,
+    duration: 3,
+})
 
-    if (scroll >= 50) {
-        hiddenElement.classList.add('show');
-    } else { hiddenElement.classList.remove('show'); }
-    
-    // if (scroll >= 500) {
-    //     hiddenElement.classList.add('show');
-    // } else { hiddenElement.classList.remove('show'); }
-    
+gsap.to('.text_1', {
+    scrollTrigger: {
+        trigger: '.text_1',
+        toggleActions: 'restart pause reverse reset',
+        scrub: 3,
+    },
+    x: 0,
+    opacity:1,
+    duration: 3,
+})
+
+gsap.to('.text_2', {
+    scrollTrigger: {
+        trigger: '.text_1',
+        toggleActions: 'restart pause reverse reset',
+        scrub: 1,
+    },
+    opacity: 1,
+    duration: 1,
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gsap.to('.test', {
+    scrollTrigger: {
+        trigger: '.test',
+        toggleActions: 'restart pause reverse pause',
+        start: 'top center',
+    },
+    x: 700,
+    rotation: 360,
+    duration: 3,
 })
