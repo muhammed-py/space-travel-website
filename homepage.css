@@ -84,7 +84,7 @@ pre {
     transform: translateX(0);
 }
 
-.hidden h2 {
+.hidden h2{
     color: var(--button-identity);
     font-size: 75px;
 }

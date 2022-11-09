@@ -15,4 +15,9 @@ window.addEventListener('scroll', function (event) {
     if (scroll >= 50) {
         hiddenElement.classList.add('show');
     } else { hiddenElement.classList.remove('show'); }
+    
+    // if (scroll >= 500) {
+    //     hiddenElement.classList.add('show');
+    // } else { hiddenElement.classList.remove('show'); }
+    
 })
