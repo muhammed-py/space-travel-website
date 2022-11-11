@@ -85,9 +85,6 @@ nav ul {
     color: var(--button-identity);
 }
 
-
-
-
 .text_2 {
     opacity: 0;
     align-self: center;
@@ -96,9 +93,10 @@ nav ul {
 }
 
 .test{
+    z-index: -2;
     width: 100px;
     height: 100px;
-    background-color: red;
+    background-color: wheat;
 }
 
 .section_3{
@@ -142,13 +140,51 @@ nav ul {
     height: 500px;
 }
 
-.container2{
+.container_2{
     background-image: url(images/raw/father-day-4853174.jpg);
     background-size: cover;
     width: 100%;
     height: 100vh;
 }
 
-.container2 .section_5 {
+.container .section_5 {
+    opacity: 0;
     font-family: Freestyle Script;
+    font-size: 75px;
+    font-weight: 300;
+    margin-left: 5%;
+    padding-top: 25vh;
+    color: var(--button-identity);
+}
+
+.container .section_6 {
+    opacity: 0;
+    font-family: Freestyle Script;
+    font-size: 75px;
+    font-weight: 300;
+    margin-left: 45%;
+    color: var(--button-identity);
+}
+
+.section_7{  
+    height: 80vh;
+    width: 30%;
+    border-radius: 30px;
+}
+
+.section_8{
+    z-index: -2;
+    color: var(--fast);
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 1.5fr;
+}
+
+.section_9{
+    height: 80vh;
+    width: 30%;
+    border-radius: 30px;
+    align-self: flex-start;
+    margin-left: 10%;
+    opacity: 0;
 }

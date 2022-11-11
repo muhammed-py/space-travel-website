@@ -51,12 +51,87 @@ gsap.to('.section_4', {
     scrollTrigger: {
         trigger: '.section_4',
         toggleActions: 'restart pause reverse none',
-        ennd: 'center center',
+        end: 'center center',
         scrub: 3,
     },
     opacity:1,
     duration: 3,
 })
+
+gsap.to('.container_2', {
+    scrollTrigger: {
+        trigger: '.container_2',
+        toggleActions: 'restart pause reverse none',
+        end: 'bottom top',
+        pin:true,
+        scrub: 3,
+    },
+    opacity:1,
+    duration: 3,
+})
+
+gsap.to('.section_5', {
+    scrollTrigger: {
+        trigger: '.section_5',
+        toggleActions: 'restart pause reverse none',
+        start:'top top',
+        scrub: 3,
+    },
+    opacity: 1,
+    duration: 3,
+})
+
+gsap.to('.section_6', {
+    scrollTrigger: {
+        trigger: '.section_6',
+        toggleActions: 'restart pause reverse none',
+        start: '50vh top',
+        scrub: 3,
+    },
+    opacity: 1,
+    duration: 3,
+})
+
+gsap.to('.section_7', {
+    scrollTrigger: {
+        trigger: '.section_7',
+        start: 'top 10%',
+        endTrigger:'.section_9',
+        end:'bottom top',
+        toggleActions: 'restart pause reverse none',
+        scrub: 3,
+        pin:true,
+    },
+    x:600,
+    duration: 2,
+})
+
+gsap.to('.section_8', {
+    scrollTrigger: {
+        trigger: '.section_8',
+        toggleActions: 'restart pause reverse none',
+        start: 'center center',
+        scrub: 3,
+        pin:true,
+    },
+    opacity: 0,
+    duration: 2,
+})
+
+gsap.to('.section_9', {
+    scrollTrigger: {
+        trigger: '.section_9',
+        start: 'top 10%',
+        endTrigger: '.section_9',
+        end: 'bottom top',
+        toggleActions: 'restart pause reverse none',
+        scrub: 3,
+        pin: true,
+    },
+    opacity:1,
+    duration: 2,
+})
+
 
 
 
@@ -78,8 +153,9 @@ gsap.to('.test', {
         trigger: '.test',
         toggleActions: 'restart pause reverse pause',
         start: 'top center',
+        pin: true,
     },
-    x: 700,
-    rotation: 360,
+    // x: 700,
+    // rotation: 360,
     duration: 3,
 })
