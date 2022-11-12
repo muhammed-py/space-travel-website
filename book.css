@@ -70,3 +70,31 @@ nav ul {
 .bf:hover {
     color: var(--in-active);
 }
+
+.pictures{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25vh;
+    
+}
+
+img{
+    width: 33%;
+    opacity: 0.5;
+}
+
+.solar{
+   transform: rotate(90deg);
+   border-radius: 35px;
+}
+
+.text {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    /* margin-top: 25vh; */
+    color: var(--grey);
+}
