@@ -102,13 +102,6 @@ nav ul {
     color: var(--dark-blue);
 }
 
-.test{
-    z-index: -2;
-    width: 100px;
-    height: 300vh;
-    background-color: rgb(54, 54, 54);
-}
-
 .section_3{
     margin-top: 50vh;
     color: var(--button-identity);
