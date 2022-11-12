@@ -14,9 +14,11 @@ gsap.to('.section_2', {
 
 gsap.to('.text_1', {
     scrollTrigger: {
-        trigger: '.text_1',
+        trigger: '.section_2',
+        start: 'top center',
         toggleActions: 'restart pause reverse reset',
         scrub: 3,
+        markers:true,
     },
     x: 0,
     opacity:1,
@@ -25,10 +27,11 @@ gsap.to('.text_1', {
 
 gsap.to('.text_2', {
     scrollTrigger: {
-        trigger: '.text_1',
+        trigger: '.section_2',
+        start: 'center center',
         toggleActions: 'restart pause reverse reset',
-        start:'top 25%',
         scrub: 1,
+        markers: true,
     },
     opacity: 1,
     duration: 1,
@@ -97,7 +100,7 @@ gsap.to('.section_7', {
         trigger: '.section_7',
         start: 'top 10%',
         endTrigger:'.section_9',
-        end:'bottom top',
+        end:'center top',
         toggleActions: 'restart pause reverse none',
         scrub: 3,
         pin:true,
@@ -123,7 +126,7 @@ gsap.to('.section_9', {
         trigger: '.section_9',
         start: 'top 10%',
         endTrigger: '.section_9',
-        end: 'bottom top',
+        end: 'center top',
         toggleActions: 'restart pause reverse none',
         scrub: 3,
         pin: true,
@@ -146,16 +149,3 @@ gsap.to('.section_9', {
 
 
 
-
-
-gsap.to('.test', {
-    scrollTrigger: {
-        trigger: '.test',
-        toggleActions: 'restart pause reverse pause',
-        start: 'top center',
-        pin: true,
-    },
-    // x: 700,
-    // rotation: 360,
-    duration: 3,
-})

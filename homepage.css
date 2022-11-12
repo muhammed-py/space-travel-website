@@ -18,6 +18,7 @@ body {
     --dark-brown: #352b26;
     --dark-blue: #132a3b;
     --grey: #707070;
+    --in-active:#707070;
     --font: calibri;
 }
 
@@ -62,6 +63,15 @@ nav ul {
     color: var(--button-identity);
 }
 
+.hp {
+    color: var(--in-active);
+    cursor: auto;
+}
+
+.hp:hover {
+    color: var(--in-active);
+}
+
 .section_1 {
     width: 100%;
     height: 100vh;
@@ -95,8 +105,8 @@ nav ul {
 .test{
     z-index: -2;
     width: 100px;
-    height: 100px;
-    background-color: wheat;
+    height: 300vh;
+    background-color: rgb(54, 54, 54);
 }
 
 .section_3{
@@ -187,4 +197,36 @@ nav ul {
     align-self: flex-start;
     margin-left: 10%;
     opacity: 0;
+}
+
+
+.section_change {
+    height: 50vh;
+    width: 20%;
+    opacity: 0;
+}
+
+.h1{
+    text-align: center;
+    padding-top: 75vh;
+    font-size: 75px;
+    color: var(--button-identity);
+}
+
+button {
+    margin: 20vh 40%;
+    width: 250px;
+    height: 75px;
+    border-radius: 25px;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: var(--button-identity);
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+
+button:hover {
+    background: transparent;
+    color: var(--grey);
+    border: 1px solid var(--grey);
 }
