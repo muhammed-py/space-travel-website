@@ -1,6 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    transition: all 5s ease-in-out;
 }
 
 body {
@@ -71,30 +72,68 @@ nav ul {
     color: var(--in-active);
 }
 
-.pictures{
+.container_2 {
+    display: flex;
+}
+
+.earth, .moon, .solar {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 25vh;
-    
+    width: 33%;
+    cursor: pointer;   
 }
 
-img{
-    width: 33%;
+img {
+    position: relative;
+    width: 100%;
     opacity: 0.5;
 }
 
-.solar{
-   transform: rotate(90deg);
-   border-radius: 35px;
+.p1, .p2, .p3 {
+    position: absolute;
+    width: 83%;
+    transform: translateX(14%);
 }
 
-.text {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    /* margin-top: 25vh; */
-    color: var(--grey);
+.p2 {
+    width: 50%;
+    transform: translateX(50%);
+}
+
+.img_solar {
+    transform: rotate(90deg);
+    border-radius: 35px;
+}
+
+.p3 {
+    width: 35%;
+    transform: translateX(90%);
+}
+
+
+.earth_enlarge {
+    transform: translateX(100%) scale(2.5, 2.5);
+}
+
+.enlarge{
+    transform: scale(4,4);
+}
+
+.solar_enlarge {
+    transform: translateX(-50%) scale(1.5, 1.5) rotate(90deg);
+}
+
+.hidden{
+    display: none;
+}
+
+.center{
+    transform: translateX(150%);
+}
+
+.p3_center {
+    transform: translateX(-75%)
 }
