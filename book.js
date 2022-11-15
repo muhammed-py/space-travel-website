@@ -21,18 +21,23 @@ earth.addEventListener('click', () =>{
 })
 
 moon.addEventListener('click', () => {
-    earthImage.classList.toggle('hidden');
-    p1.classList.toggle('hidden');
-    solarImage.classList.toggle('hidden');
-    p3.classList.toggle('hidden');
+    earth.classList.toggle('hidden');
+    solar.classList.toggle('hidden');
     moonImage.classList.toggle('enlarge');
 })
 
 solar.addEventListener('click', () => {
     p3.classList.toggle('p3_center');
     solarImage.classList.toggle('solar_enlarge');
-    earthImage.classList.toggle('hidden');
-    p1.classList.toggle('hidden');
-    moonImage.classList.toggle('hidden');
-    p2.classList.toggle('hidden');
+    earth.classList.toggle('hidden');
+    moon.classList.toggle('hidden');
 })
+
+
+if (earthImage.classList.contains('earth_enlarger')) {
+    // do some thing
+} else if (moonImage.classList.contains('enlarger')) {
+    // moon page
+} else {
+    // solar enlarge
+}
