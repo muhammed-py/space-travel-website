@@ -1,5 +1,4 @@
-
-                       // click function 
+gsap.registerPlugin(ScrollTrigger);
 
 let earth = document.querySelector('.earth'),
     moon = document.querySelector('.moon'),
@@ -9,7 +8,8 @@ let earth = document.querySelector('.earth'),
     solarImage = document.querySelector('.img_solar'),
     p1 = document.querySelector('.p1'),
     p2 = document.querySelector('.p2'),
-    p3 = document.querySelector('.p3');
+    p3 = document.querySelector('.p3'),
+    earthBook = document.querySelector('.earth_book');
 
 
 
@@ -18,6 +18,7 @@ earth.addEventListener('click', () =>{
     moon.classList.toggle('hidden');
     solar.classList.toggle('hidden');
     earthImage.classList.toggle('earth_enlarge');
+    earthBook.classList.toggle('hide');
 })
 
 moon.addEventListener('click', () => {
@@ -32,12 +33,3 @@ solar.addEventListener('click', () => {
     earth.classList.toggle('hidden');
     moon.classList.toggle('hidden');
 })
-
-
-if (earthImage.classList.contains('earth_enlarger')) {
-    // do some thing
-} else if (moonImage.classList.contains('enlarger')) {
-    // moon page
-} else {
-    // solar enlarge
-}
