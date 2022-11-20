@@ -72,7 +72,10 @@ nav ul {
 }
 
 .container_2 {
-    display: flex;
+    margin-top: 20vh;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
 }
 
 .earth, .moon, .solar {
@@ -81,7 +84,7 @@ nav ul {
     justify-content: space-between;
     align-items: center;
     margin-top: 25vh;
-    width: 33%;
+    width: 100%;
     cursor: pointer;   
 }
 
@@ -175,4 +178,8 @@ button:hover {
 
 .hide{
     display: none;
+}
+
+.scroll{
+    transform: translateY(300px);
 }

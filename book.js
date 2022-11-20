@@ -14,6 +14,7 @@ let earth = document.querySelector('.earth'),
 
 
 earth.addEventListener('click', () =>{
+
     p1.classList.toggle('center');
     moon.classList.toggle('hidden');
     solar.classList.toggle('hidden');
