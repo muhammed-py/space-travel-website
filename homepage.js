@@ -14,8 +14,8 @@ gsap.to('.section_2', {
 
 gsap.to('.text_1', {
     scrollTrigger: {
-        trigger: '.section_2',
-        start: 'top center',
+        trigger: '.section_1',
+        start: 'top bottom',
         toggleActions: 'restart pause reverse reset',
         scrub: 3,
     },
@@ -27,7 +27,7 @@ gsap.to('.text_1', {
 gsap.to('.text_2', {
     scrollTrigger: {
         trigger: '.section_2',
-        start: 'center center',
+        start: 'center bottom',
         toggleActions: 'restart pause reverse reset',
         scrub: 1,
     },
