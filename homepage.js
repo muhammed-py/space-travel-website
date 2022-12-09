@@ -96,7 +96,7 @@ gsap.to('.section_6', {
 gsap.to('.section_7', {
     scrollTrigger: {
         trigger: '.section_7',
-        start: 'top 10%',
+        start: 'top 12%',
         endTrigger:'.section_9',
         end:'center top',
         toggleActions: 'restart pause reverse none',
